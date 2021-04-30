@@ -47,7 +47,7 @@
       'bottom' : min.y
     };
 
-  d3.json('../../data/world-50m.json', function (error, sworld) {
+  d3.json('../../data/world-50m.json', function (error, world) {
     if (error) throw error;
     //initialize map with a customized projection
     var map = new maptalks.Map('map', {
