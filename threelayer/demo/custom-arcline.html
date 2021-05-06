@@ -86,6 +86,7 @@
             fetch('./data/lines.json').then(function (res) {
                 return res.json();
             }).then(function (geojson) {
+
                 var lineStrings = geojson.map(function (feature) {
                     var coordinates = feature.coordinates;
                     var [from, to] = coordinates;

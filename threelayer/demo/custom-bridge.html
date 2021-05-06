@@ -70,12 +70,9 @@
             baseLayer: baseLayer
         });
 
-
         map.on('click', e => {
             console.log(e.coordinate.toArray());
         });
-
-
 
         // the ThreeLayer to draw buildings
         var threeLayer = new maptalks.ThreeLayer('t', {
@@ -83,8 +80,6 @@
             forceRenderOnRotating: true
             // animation: true
         });
-
-
 
         var meshes = [];
         var helperMeshes = [];
@@ -757,7 +752,7 @@
 
         /**
          * custom Circle component
-         * 
+         *
          * you can customize your own components
          * */
 
